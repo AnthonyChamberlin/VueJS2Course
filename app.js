@@ -2,6 +2,6 @@
 new Vue({
     el:'#vue-app',
     data: {
-        name: 'Ant'
+        name: 'Pete'
     }
 });
