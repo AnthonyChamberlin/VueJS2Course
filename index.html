@@ -6,32 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VueJS2Course</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
     <!-- Template -->
     <div id="vue-app">
-     <h3>Looping through Lists</h3>
+        <!-- bag image -->
+        <div id="bag" v-bind:class="{ burst: ended }"></div>
 
-    <ul>
-        <li v-for="character in characters">{{ character }}</li>
-    </ul>
-
-    <ul>
-        <li v-for="(ninja, index) in ninjas">{{ index + 1 }} . {{ ninja.name }} is {{ ninja.age }} years old.</li>
-    </ul>
-
-    <template v-for="(ninja, index) in ninjas">
-        <h3>{{ index + 1 }} . {{ ninja.name }}</h3>
-        <p>{{ ninja.age }} years of age</p>
-    </template>
-
-    <template v-for="ninja in ninjas">
-        <div v-for="(val,key) in ninja">
-            <p>{{ key }} - {{ val }}</p>
-        </div>       
-    </template>
-
+        <!-- bag health -->
+        <div id="bag-health">
+            <div v-bind:style="{ width: health + '%' }"></div>
+        </div>
+        <!-- game controls -->
+        <div id="controls">
+            <button class="btn-success" @click="punch" v-show="!ended">Punch</button>
+            <button class="btn-warning" @click="restart">Restart</button>
+        </div>
     </div>
 
     <script src="app.js"></script>
