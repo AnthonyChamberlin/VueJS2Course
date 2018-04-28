@@ -11,9 +11,10 @@
 <body>
     <!-- Template -->
     <div id="vue-app">
-        <h3>{{ greet('night') }}</h3>
-        <p>{{ name }}</p>
-        <p>{{ job }}</p>
+        <h3>Data Binding</h3>
+        <a v-bind:href="website">My website</a>
+        <input type="text" v-bind:value="name">
+        <div v-html="websiteTag"></div>
     </div>
 
     <script src="app.js"></script>
