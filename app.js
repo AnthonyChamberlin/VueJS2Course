@@ -2,11 +2,15 @@
 new Vue({
     el:'#vue-app',
     data: {
-        
+        name: '',
+        age: ''
     },
     methods: {
-        click: function() {
-            alert('That\'s not allowed. -_-');
+        logName: function() {
+            console.log('name logged');
+        },
+        logAge: function() {
+            console.log('age logged');
         }
     }
 });
