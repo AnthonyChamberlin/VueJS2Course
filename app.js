@@ -6,11 +6,6 @@ new Vue({
         age: ''
     },
     methods: {
-        logName: function() {
-            console.log('name logged');
-        },
-        logAge: function() {
-            console.log('age logged');
-        }
+    
     }
 });
