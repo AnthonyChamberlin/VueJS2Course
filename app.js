@@ -7,7 +7,7 @@ new Vue({
       ninjas: [
         { 
             name: 'Ryu',
-            age: 25
+            age: 35
         },
         { 
             name: 'Yoshi',
