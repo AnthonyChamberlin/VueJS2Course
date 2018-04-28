@@ -11,8 +11,13 @@
 <body>
     <!-- Template -->
     <div id="vue-app">
-        <h3>Events</h3>
-        <a @click.prevent="click" href="amazon.co.uk">Amazon</a>
+        <h3>Keyboard Events</h3>
+        <label>Name:</label>
+        <input type="text" v-on:keyup.enter="logName" />
+        <span>{{ name }}</span>
+        <label>Age:</label>
+        <input type="text" v-on:keyup.alt.enter="logAge" />
+        <span>{{ age }}</span>
     </div>
 
     <script src="app.js"></script>
