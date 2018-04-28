@@ -2,8 +2,22 @@
 new Vue({
     el:'#vue-app',
     data: {
-      success: false,
-      error: false
+      name: 'Ant',
+      characters: ['Mario', 'Luigi', 'Yoshi', 'Bowser'],
+      ninjas: [
+        { 
+            name: 'Ryu',
+            age: 25
+        },
+        { 
+            name: 'Yoshi',
+            age: 35
+        },
+        { 
+            name: 'Ken',
+            age: 23
+        },
+      ]
     },
     methods: {
         
