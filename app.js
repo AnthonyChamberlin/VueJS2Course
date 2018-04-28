@@ -3,11 +3,11 @@ new Vue({
     el:'#vue-app',
     data: {
         name: 'Ant',
-        job: 'Developer'
+        job: 'Developer',
+        website: 'https://antchamberlin.me',
+        websiteTag: '<a href="https://antchamberlin.me">My Portfolio</a>'
     },
     methods: {
-        greet: function(time) {
-            return 'Good ' + time + ' ' + this.name;
-        }
+
     }
 });
