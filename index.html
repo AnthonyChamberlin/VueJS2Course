@@ -11,20 +11,19 @@
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-    <!-- Template -->
-    <div id="vue-app">
-        <!-- bag image -->
-        <div id="bag" v-bind:class="{ burst: ended }"></div>
 
-        <!-- bag health -->
-        <div id="bag-health">
-            <div v-bind:style="{ width: health + '%' }"></div>
-        </div>
-        <!-- game controls -->
-        <div id="controls">
-            <button class="btn-success" @click="punch" v-show="!ended">Punch</button>
-            <button class="btn-warning" @click="restart">Restart</button>
-        </div>
+    <h1>Multiple Vue Instances</h1>
+    <!-- Template -->
+    <div id="vue-app-one">
+       <h2>{{ title }}</h2>
+       <p>{{ greet }}</p>
+    </div>
+
+    <!-- Template -->
+    <div id="vue-app-two">
+        <h2>{{ title }}</h2>
+        <p>{{ greet }}</p>
+        <button @click="changeTitle">Change App One Title</button>
     </div>
 
     <script src="app.js"></script>
