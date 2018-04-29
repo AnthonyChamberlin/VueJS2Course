@@ -12,18 +12,19 @@
 </head>
 <body>
 
-    <h1>Multiple Vue Instances</h1>
+    <h1>Intro to Components</h1>
     <!-- Template -->
     <div id="vue-app-one">
        <h2>{{ title }}</h2>
        <p>{{ greet }}</p>
+       <greeting></greeting>
     </div>
 
     <!-- Template -->
     <div id="vue-app-two">
         <h2>{{ title }}</h2>
         <p>{{ greet }}</p>
-        <button @click="changeTitle">Change App One Title</button>
+        <greeting></greeting>
     </div>
 
     <script src="app.js"></script>
